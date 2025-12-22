@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
 // File:	defines.h
-// Author:	Tony Saveski, t_saveski@yahoo.com
+// Author:	Tony Saveski, saveski@gmail.com
 // Notes:	Commonly used data-type definitions.
 //---------------------------------------------------------------------------
 #ifndef DEFINES_H
@@ -25,12 +25,12 @@ typedef long			int64;
 
 typedef struct int128
 {
-	int64 lo, hi;
+    int64 lo, hi;
 } int128 __attribute__((aligned(16)));
 
 typedef struct uint128
 {
-	uint64 lo, hi;
+    uint64 lo, hi;
 } uint128 __attribute__((aligned(16)));
 
 //typedef int 			int128 __attribute__(( mode(TI), aligned(16) ));

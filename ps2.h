@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
 // File:	ps2.h
-// Author:	Tony Saveski, t_saveski@yahoo.com
+// Author:	Tony Saveski, saveski@gmail.com
 // Note:	PS2 System Routines
 //---------------------------------------------------------------------------
 #ifndef PS2_H

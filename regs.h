@@ -1,6 +1,6 @@
 //------------------------------------------------------------------------
 // File:	regs.h
-// Author:	Tony Saveski, t_saveski@yahoo.com
+// Author:	Tony Saveski, saveski@gmail.com
 // Notes:	Playstation 2 Register Definitions
 //------------------------------------------------------------------------
 #ifndef REGS_H

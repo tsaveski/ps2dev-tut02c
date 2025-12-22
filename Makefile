@@ -1,6 +1,6 @@
 #----------------------------------------------------------------------------
 # File:		Makefile
-# Author:	Tony Saveski, t_saveski@yahoo.com
+# Author:	Tony Saveski, saveski@gmail.com
 #----------------------------------------------------------------------------
 CC=ee-gcc
 AS=ee-as

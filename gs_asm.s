@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------
 # File:		gs_asm.s
-# Author:	Tony Saveski, t_saveski@yahoo.com
+# Author:	Tony Saveski, saveski@gmail.com
 # Notes:	GS routines implemented in assembler
 #------------------------------------------------------------------------
 
@@ -19,18 +19,18 @@
 .align 7
 .ent gs_set_imr
 gs_set_imr:
-	li		a0,0x0000FF00
-	ld		v0,csr
-	dsrl	v0,16
-	andi	v0,0xFF
-	li		v1,0x71
-	nop
-	syscall
-	nop
+    li		a0,0x0000FF00
+    ld		v0,csr
+    dsrl	v0,16
+    andi	v0,0xFF
+    li		v1,0x71
+    nop
+    syscall
+    nop
 
-	daddu	v0,zero,zero	# return 0
-	jr		ra
-	nop
+    daddu	v0,zero,zero	# return 0
+    jr		ra
+    nop
 .end gs_set_imr
 
 #------------------------------------------------------------------------
@@ -39,12 +39,12 @@ gs_set_imr:
 .align 7
 .ent gs_set_crtc
 gs_set_crtc:
-	li		v1,0x02			# call SetGsCrt
-	syscall
-	nop
+    li		v1,0x02			# call SetGsCrt
+    syscall
+    nop
 
-	daddu	v0,zero,zero	# return 0
-	jr		ra
-	nop
+    daddu	v0,zero,zero	# return 0
+    jr		ra
+    nop
 .end gs_set_crtc
 

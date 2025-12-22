@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
 // File:	dma.h
-// Author:	Tony Saveski, t_saveski@yahoo.com
+// Author:	Tony Saveski, saveski@gmail.com
 // Notes:	Playstation2 DMA Convenience Routines and Macros
 //---------------------------------------------------------------------------
 // * Data is transfered in qword (128bit, 16bytes) units
@@ -28,17 +28,17 @@ extern void dma_reset(void);
 #define GIF_CHCR		((volatile uint32 *)(gif_chcr))
 
 #define SET_CHCR(WHICH,DIR,MOD,ASP,TTE,TIE,STR,TAG) \
-	*WHICH = \
-	((uint32)(DIR)	<< 0)		| \
-	((uint32)(MOD)	<< 2)		| \
-	((uint32)(ASP)	<< 4)		| \
-	((uint32)(TTE)	<< 6)		| \
-	((uint32)(TIE)	<< 7)		| \
-	((uint32)(STR)	<< 8)		| \
-	((uint32)(TAG)	<< 16)
+    *WHICH = \
+    ((uint32)(DIR)	<< 0)		| \
+    ((uint32)(MOD)	<< 2)		| \
+    ((uint32)(ASP)	<< 4)		| \
+    ((uint32)(TTE)	<< 6)		| \
+    ((uint32)(TIE)	<< 7)		| \
+    ((uint32)(STR)	<< 8)		| \
+    ((uint32)(TAG)	<< 16)
 
 #define DMA_WAIT(WHICH) \
-	while((*WHICH) & (1<<8))
+    while((*WHICH) & (1<<8))
 
 //---------------------------------------------------------------------------
 // MADR Register - Transfer Address Register
@@ -46,9 +46,9 @@ extern void dma_reset(void);
 #define GIF_MADR		((volatile uint32 *)(gif_madr))
 
 #define SET_MADR(WHICH,ADDR,SPR) \
-	*WHICH = \
-	((uint32)(ADDR)	<< 0)		| \
-	((uint32)(SPR)	<< 31)
+    *WHICH = \
+    ((uint32)(ADDR)	<< 0)		| \
+    ((uint32)(SPR)	<< 31)
 
 //---------------------------------------------------------------------------
 // TADR Register - Tag Address Register
@@ -56,9 +56,9 @@ extern void dma_reset(void);
 #define GIF_TADR		((volatile uint32 *)(gif_tadr))
 
 #define SET_TADR(WHICH,ADDR,SPR) \
-	*WHICH = \
-	((uint32)(ADDR)	<< 0)		| \
-	((uint32)(SPR)	<< 31)
+    *WHICH = \
+    ((uint32)(ADDR)	<< 0)		| \
+    ((uint32)(SPR)	<< 31)
 
 //---------------------------------------------------------------------------
 // QWC Register - Transfer Data Size Register
@@ -66,7 +66,7 @@ extern void dma_reset(void);
 #define GIF_QWC		((volatile uint32 *)(gif_qwc))
 
 #define SET_QWC(WHICH,SIZE) \
-	*WHICH = (uint32)(SIZE)
+    *WHICH = (uint32)(SIZE)
 
 #endif // DMA_H
 

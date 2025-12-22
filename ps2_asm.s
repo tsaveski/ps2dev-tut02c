@@ -1,6 +1,6 @@
 #------------------------------------------------------------------------
 # File:		ps2_asm.s
-# Author:	Tony Saveski, t_saveski@yahoo.com
+# Author:	Tony Saveski, saveski@gmail.com
 # Notes:	PS2 System routines implemented in assembler
 #------------------------------------------------------------------------
 
@@ -18,9 +18,9 @@
 .align 7
 .ent ps2_flush_cache
 ps2_flush_cache:
-	li	$3,100
-	syscall
-	jr	$31
-	nop
+    li	$3,100
+    syscall
+    jr	$31
+    nop
 .end ps2_flush_cache
 
