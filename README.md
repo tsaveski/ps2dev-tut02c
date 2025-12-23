@@ -1,5 +1,5 @@
 # ps2dev-tut02c
-**Dreamtime's Playstation 2 Programming Tutorial 02c**
+**Dreamtime's Playstation 2 Development Tutorial 02c**
 
-http://ps2dev.substack.com/ps2dev-tut02c
+http://saveski.substack.com/p/ps2dev-tut02c
 
